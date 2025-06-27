@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Nano DIY Drone</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            .diagonal-section {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 3em 0;
+                flex-wrap: wrap;
+            }
+            .diagonal-section.reverse {
+                flex-direction: row-reverse;
+            }
+            .diagonal-section .image {
+                flex: 1 1 300px;
+                max-width: 400px;
+                margin: 0 2em;
+            }
+            .diagonal-section .desc {
+                flex: 1 1 300px;
+                max-width: 500px;
+            }
+            @media (max-width: 900px) {
+                .diagonal-section, .diagonal-section.reverse {
+                    flex-direction: column !important;
+                    text-align: center;
+                }
+                .diagonal-section .image, .diagonal-section .desc {
+                    margin: 1em 0;
+                    max-width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+            <div id="wrapper" class="fade-in">
+
+                <!-- Header -->
+                    <header id="header">
+                        <a href="index.html" class="logo">HOME</a>
+                    </header>
+
+                <!-- Main -->
+                    <div id="main">
+
+                        <!-- Title -->
+                        <section class="post featured">
+                            <header class="major">
+                                <h1>Nano DIY Drone</h1>
+                                <p>Discover the build process, features, and gallery of the Nano DIY Drone project.</p>
+                            </header>
+                        </section>
+
+                        <!-- Diagonal Sections -->
+                        <section class="diagonal-section">
+                            <div class="image">
+                                <img src="images/prototype.jpg" alt="Drone Frame" style="width:100%;border-radius:8px;">
+                            </div>
+                            <div class="desc">
+                                <h2>Prototype</h2>
+                                <p>The initial prototype was built using an ESP32-WROOM module integrated with an onboard IMU, enabling Wi-Fi-based control and basic flight stabilization for the Nano DIY drone.</p>
+                            </div>
+                        </section>
+
+                        <section class="diagonal-section reverse">
+                            <div class="image">
+                                <img src="images/TOF.jpg" alt="Electronics" style="width:100%;border-radius:8px;">
+                            </div>
+                            <div class="desc">
+                                <h2>Alt Hold feature</h2>
+                                <p>This version featured altitude hold using a ToF sensor and included a custom-designed PCB developed from schematic to layout, enhancing integration and performance</p>
+                            </div>
+                        </section>
+
+                        <section class="diagonal-section">
+                            <div class="image">
+                                <img src="images/pcb.jpg" alt="Propellers" style="width:100%;border-radius:8px;">
+                            </div>
+                            <div class="desc">
+                                <h2>Iteration</h2>
+                                <p>Following RCA analysis and multiple design iterations, a custom PCB was developed from schematic to layout, integrating a ToF sensor for reliable altitude hold.</p>
+                            </div>
+                        </section>
+
+                        <!-- Add more sections as needed -->
+
+                    </div>
+
+                <!-- Copyright -->
+                    <div id="copyright">
+                        <ul><li></li><li><a href="https://html5up.net"></a></li></ul>
+                    </div>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
